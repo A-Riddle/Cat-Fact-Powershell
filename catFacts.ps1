@@ -7,4 +7,4 @@ $catObject = ConvertFrom-Json $catJson
 Add-Type -AssemblyName System.speech 
 $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer 
 $speak.Speak($catObject.fact)
-#$wshell.Popup($catObject.facts,0,"Cats",0x1)
+#$wshell.Popup($catObject.fact,0,"Cats",0x1)
